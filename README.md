@@ -6,3 +6,5 @@ CODECLIMATE : <a href="https://codeclimate.com/github/denyadeho/frontend-project
 ASCIINEMA brain-even : https://asciinema.org/a/bVqt8YHoKvNAx4O90HzOx8Qoq
 
 ASCIINEMA brain-calc : https://asciinema.org/a/FDaHOwPEg8iEenQuMnR4UUo7q
+
+ASCIINEMA brain-gcd : https://asciinema.org/a/XpoMyTUGOhxRMegeRq4nzEWGf
