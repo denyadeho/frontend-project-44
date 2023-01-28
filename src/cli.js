@@ -6,4 +6,4 @@ import readlineSync from 'readline-sync';
   return name;
 };
 
- export const askUser;
+ export default askUser;
