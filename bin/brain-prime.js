@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import askUser from '../src/cli.js';
 
@@ -12,8 +13,8 @@ for (let i = 0; i < 3; i++) {
 
   const isPrime = (numb) => {
     let count = 0;
-    for (let i = 1; i <= numb; i++) {
-      if (numb % i === 0) {
+    for (let j = 1; j <= numb; j++) {
+      if (numb % j === 0) {
         count += 1;
       }
     }
