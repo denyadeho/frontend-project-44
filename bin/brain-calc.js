@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import askUser from '../src/cli.js';
 
@@ -5,7 +6,7 @@ console.log('Welcome to the Brain Games!');
 const name = askUser();
 console.log('What is the result of the expression?');
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i += 1) {
   const randomFirstNum = Math.floor(Math.random() * 101);
   const randomSecondNum = Math.floor(Math.random() * 101);
   const randomOperator = Math.floor(Math.random() * 3);
@@ -24,6 +25,7 @@ for (let i = 0; i < 3; i++) {
       operator = '*';
       result = randomFirstNum * randomSecondNum;
       break;
+    default: break;
   }
   console.log(`Question: ${randomFirstNum} ${operator} ${randomSecondNum}`);
   const answer = readlineSync.question('Your answer: ');
