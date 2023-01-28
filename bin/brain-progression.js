@@ -4,14 +4,16 @@ import askUser from '../src/cli.js';
 console.log('Welcome to the Brain Games!');
 const name = askUser();
 console.log('What number is missing in the progression?');
+
 for (let i = 0; i < 3; i++) {
   const randomStartNumber = Math.floor(Math.random() * 101);
   const randomProgressionNumber = Math.floor(Math.random() * 11);
-  const randomCycle = Math.floor(Math.random() * (10 - 4) + 4);
+  const randomNumOfCycle = Math.floor(Math.random() * (10 - 4) + 4);
   const result = [];
   let temp = randomStartNumber;
   result.push(temp);
-  for (let i = 0; i < randomCycle; i++) {
+
+  for (let i = 0; i < randomNumOfCycle; i++) {
     temp += randomProgressionNumber;
     result.push(temp);
   }

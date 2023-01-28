@@ -6,26 +6,26 @@ const name = askUser();
 console.log('What is the result of the expression?');
 
 for (let i = 0; i < 3; i++) {
-  const randomNum = Math.floor(Math.random() * 101);
-  const randomNum1 = Math.floor(Math.random() * 101);
-  const random = Math.floor(Math.random() * 3);
+  const randomFirstNum = Math.floor(Math.random() * 101);
+  const randomSecondNum = Math.floor(Math.random() * 101);
+  const randomOperator = Math.floor(Math.random() * 3);
   let result = 0;
   let operator = '';
-  switch (random) {
+  switch (randomOperator) {
     case 0:
       operator = '+';
-      result = randomNum + randomNum1;
+      result = randomFirstNum + randomSecondNum;
       break;
     case 1:
       operator = '-';
-      result = randomNum - randomNum1;
+      result = randomFirstNum - randomSecondNum;
       break;
     case 2:
       operator = '*';
-      result = randomNum * randomNum1;
+      result = randomFirstNum * randomSecondNum;
       break;
   }
-  console.log(`Question: ${randomNum} ${operator} ${randomNum1}`);
+  console.log(`Question: ${randomFirstNum} ${operator} ${randomSecondNum}`);
   const answer = readlineSync.question('Your answer: ');
   const numbAnswer = Number(answer);
   if (numbAnswer === result) {
