@@ -5,12 +5,13 @@ console.log('Welcome to the Brain Games!');
 const name = askUser();
 console.log('What is the result of the expression?');
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i += 1) {
   const randomNum = Math.floor(Math.random() * 101);
   const randomNum1 = Math.floor(Math.random() * 101);
   const random = Math.floor(Math.random() * 3);
   let result = 0;
   let operator = '';
+  
   switch (random) {
     case 0:
       operator = '+';
@@ -23,6 +24,8 @@ for (let i = 0; i < 3; i++) {
     case 2:
       operator = '*';
       result = randomNum * randomNum1;
+      break;
+    default:
       break;
   }
   console.log(`Question: ${randomNum} ${operator} ${randomNum1}`);
