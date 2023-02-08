@@ -11,7 +11,7 @@ for (let i = 0; i < 3; i += 1) {
   const random = Math.floor(Math.random() * 3);
   let result = 0;
   let operator = '';
-  
+
   switch (random) {
     case 0:
       operator = '+';

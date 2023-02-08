@@ -15,7 +15,8 @@ for (let i = 0; i < 3; i += 1) {
     console.log('Correct!');
   }
 
-  } else {
+  }
+else {
     console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
     console.log(`Let's try again, ${name}!`);
     break;
