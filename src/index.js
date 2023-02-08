@@ -12,10 +12,7 @@ for (let i = 0; i < 3; i++) {
   if (i === 2) {
     console.log(`Congratulations, ${name}!`);
   }
-
-
-import readlineSync from 'readline-sync';
-import askUser from '../src/cli.js';
+  
 
 console.log('Welcome to the Brain Games!');
 const name = askUser();
