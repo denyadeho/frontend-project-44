@@ -18,6 +18,7 @@ for (let i = 0; i < 3; i += 1) {
     temp += randomProgressionNumber;
     result.push(temp);
   }
+
   const lengthOfArr = result.length - 1;
   const randomNumHide = Math.floor(Math.random() * lengthOfArr);
   const neededNumb = result[randomNumHide];
