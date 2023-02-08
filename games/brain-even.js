@@ -24,4 +24,4 @@ for (let i = 0; i < 3; i += 1) {
   if (i === 2) {
     console.log(`Congratulations, ${name}!`);
   }
-}
+
