@@ -6,7 +6,7 @@ console.log('Welcome to the Brain Games!');
 const name = askUser();
 console.log('What number is missing in the progression?');
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i += 1) {
   const randomStartNumber = Math.floor(Math.random() * 101);
   const randomProgressionNumber = Math.floor(Math.random() * 11);
   const randomNumOfCycle = Math.floor(Math.random() * (10 - 4) + 4);
@@ -14,7 +14,7 @@ for (let i = 0; i < 3; i++) {
   let temp = randomStartNumber;
   result.push(temp);
 
-  for (let i = 0; i < randomNumOfCycle; i++) {
+  for (let j = 0; j < randomNumOfCycle; j += 1) {
     temp += randomProgressionNumber;
     result.push(temp);
   }
