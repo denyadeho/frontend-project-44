@@ -14,13 +14,13 @@ for (let i = 0; i < 3; i += 1) {
   } else if (randomNum % 2 === 1 && answer === 'no') {
     console.log('Correct!');
   }
-
-  }
-else {
+  else {
     console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
     console.log(`Let's try again, ${name}!`);
     break;
   }
+  }
+
   if (i === 2) {
     console.log(`Congratulations, ${name}!`);
   }
