@@ -14,8 +14,7 @@ ____
 
 Демонстрация игр:
 
-ASCIINEMA brain-even - <a href="http://www.youtube.com/watch?feature=player_embedded&v=ID_ВИДЕОРОЛИКА_НА_YOUTUBE" target="_blank"><img src="http://img.youtube.com/vi/ID_ВИДЕОРОЛИКА_НА_YOUTUBE/0.jpg"
-alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" width="240" height="180" border="10" /></a>
+ASCIINEMA brain-even - [![brain-even](https://i.imgur.com/ebf47Xf.png)](https://asciinema.org/a/at2uI0bN3KYfGLDKVJeyN0kF3)
 ASCIINEMA brain-calc - https://asciinema.org/a/FDaHOwPEg8iEenQuMnR4UUo7q
 ASCIINEMA brain-gcd - https://asciinema.org/a/XpoMyTUGOhxRMegeRq4nzEWGf
 ASCIINEMA brain-progression - https://asciinema.org/a/QtA3wmfSN6LOokRVnGf6NMO6b
