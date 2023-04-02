@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import askUser from "../cli.js";
 import { generateRandomNum, getAnswer } from "../index.js";
 const brainPrime = () => {
