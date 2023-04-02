@@ -1,26 +1,33 @@
 # Brain-games
 ____
 ## Description
-The project is a collection of 5 math games. To win, you need to answer 3 times correctly. If the answer is incorrect, the game will be over, but do not despair, you can try again :)
+The project is a collection of 5 math games. To win, you need to answer 3 times correctly. If the answer is incorrect, the game will be over, but do not despair, you can try again.
+
 ____
 ## Hexlet tests and linter status:
 [![Actions Status](https://github.com/denyadeho/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/denyadeho/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/denyadeho/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/a552e3fd1d2e414332a6/maintainability" /></a>
 ____
+## Minimum launch requirements
+Installed npm package, nodejs version 13 and higher.
 ## Setup
+Clone this repository to your computer
+
+`git clone git@github.com:denyadeho/frontend-project-44.git`
+
+Install dependencies
+
 `make install`
 
 
-Минимальные требования для запуска игр: установленный npm пакет, nodejs версии 13 и выше.
-Для запуска игр используйте запись в терминале интересуеющей вас игры: brain-even, brain-calc, brain-gcd, brain-progression, brain-prime.
-
+Everything is ready. Launch the game you are interested in.
 
 # Demonstration:
 
 ## brain-even
 [![brain-even](https://i.imgur.com/ebf47Xf.png)](https://asciinema.org/a/at2uI0bN3KYfGLDKVJeyN0kF3)
 ____
-## brain-calc 
+## brain-calc
 [![brain-calc](https://i.imgur.com/cxRuXup.png)](https://asciinema.org/a/jHxWXAAixOP8cdosMcaXoHatg)
 ____
 ## brain-gcd 
