@@ -1,5 +1,6 @@
-import askUser from "../cli.js";
-import { generateRandomNum, getAnswer } from "../index.js";
+import askUser from '../cli.js';
+import { generateRandomNum, getAnswer } from '../index.js';
+
 const brainGcd = () => {
   const name = askUser();
   console.log('Find the greatest common divisor of given numbers.');
@@ -39,5 +40,4 @@ const brainGcd = () => {
     }
   }
 };
-
 export default brainGcd;

@@ -1,5 +1,6 @@
-import askUser from "../cli.js";
-import { generateRandomNum, getAnswer } from "../index.js";
+import askUser from '../cli.js';
+import { generateRandomNum, getAnswer } from '../index.js';
+
 const brainProgression = () => {
   const name = askUser();
   console.log('What number is missing in the progression?');
@@ -39,5 +40,4 @@ const brainProgression = () => {
     }
   }
 };
-
 export default brainProgression;

@@ -1,5 +1,6 @@
-import askUser from "../cli.js";
-import { generateRandomNum, getAnswer } from "../index.js";
+import askUser from '../cli.js';
+import { generateRandomNum, getAnswer } from '../index.js';
+
 const brainEven = () => {
   const name = askUser();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -27,5 +28,4 @@ const brainEven = () => {
     }
   }
 };
-
 export default brainEven;

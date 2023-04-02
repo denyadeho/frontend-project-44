@@ -1,4 +1,4 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 export const generateRandomNum = (num = 101) => Math.floor(Math.random() * num);
 

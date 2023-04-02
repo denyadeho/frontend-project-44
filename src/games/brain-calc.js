@@ -1,5 +1,6 @@
-import askUser from "../cli.js";
-import { generateRandomNum, getAnswer } from "../index.js";
+import askUser from '../cli.js';
+import { generateRandomNum, getAnswer } from '../index.js';
+
 const brainCalc = () => {
   const name = askUser();
   console.log('What is the result of the expression?');
@@ -40,5 +41,4 @@ const brainCalc = () => {
     }
   }
 };
-
 export default brainCalc;

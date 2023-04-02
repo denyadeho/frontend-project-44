@@ -1,5 +1,6 @@
-import askUser from "../cli.js";
-import { generateRandomNum, getAnswer } from "../index.js";
+import askUser from '../cli.js';
+import { generateRandomNum, getAnswer } from '../index.js';
+
 const brainPrime = () => {
   const name = askUser();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
@@ -32,5 +33,4 @@ const brainPrime = () => {
     }
   }
 };
-
 export default brainPrime;
