@@ -5,7 +5,7 @@ ____
 <a href="https://codeclimate.com/github/denyadeho/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/a552e3fd1d2e414332a6/maintainability" /></a>
 ____
 ## Setup
->make install
+`make install`
 
 Проект представляет из себя сборник из 5 математических игр.
 Минимальные требования для запуска игр: установленный npm пакет, nodejs версии 13 и выше.
