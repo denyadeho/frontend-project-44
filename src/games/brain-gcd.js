@@ -24,7 +24,7 @@ const gameGcd = () => {
   }
   const question = `${randomFirstNum} ${randomSecondNum}`;
   return [result.toString(), question];
-}
+};
 const brainGcd = () => {
   base(gameGcd, rule);
 };

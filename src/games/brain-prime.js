@@ -1,6 +1,6 @@
 import { generateRandomNum, base } from '../index.js';
 
-const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const gamePrime = () => {
   const randomNum = generateRandomNum();

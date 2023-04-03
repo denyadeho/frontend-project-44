@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 import askUser from './cli.js';
+
 export const generateRandomNum = (num = 101) => Math.floor(Math.random() * num);
 export const getAnswer = () => readlineSync.question('Your answer: ');
 export const base = (game, rule) => {
