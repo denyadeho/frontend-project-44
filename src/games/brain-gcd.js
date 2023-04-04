@@ -1,4 +1,5 @@
-import { generateRandomNum, base } from '../index.js';
+import base from '../index.js';
+import generateRandomNum from '../utils.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
