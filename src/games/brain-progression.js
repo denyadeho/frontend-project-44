@@ -1,9 +1,9 @@
-import base from '../index.js';
+import createDefaultOutput from '../index.js';
 import generateRandomNum from '../utils.js';
 
 const rule = 'What number is missing in the progression?';
 
-const gameProgression = () => {
+const generateProgressionGame = () => {
   const randomStartNumber = generateRandomNum();
   const randomProgressionNumber = generateRandomNum(11);
   const randomNumOfCycle = Math.floor(Math.random() * (10 - 4) + 4);
@@ -20,13 +20,10 @@ const gameProgression = () => {
   const randomNumHide = generateRandomNum(lengthOfArr);
   const neededNumb = result[randomNumHide];
   result[randomNumHide] = '..';
-
-  const textForQuestion = result.join(' ');
-  const question = `${textForQuestion}`;
-
-  return [neededNumb.toString(), question];
+  return [neededNumb.toString(), result.join(' ')];
 };
+
 const brainProgression = () => {
-  base(gameProgression, rule);
+  createDefaultOutput(generateProgressionGame, rule);
 };
 export default brainProgression;

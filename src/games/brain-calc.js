@@ -1,8 +1,8 @@
-import base from '../index.js';
+import createDefaultOutput from '../index.js';
 import generateRandomNum from '../utils.js';
 
 const rule = 'What is the result of the expression?';
-const calcGame = () => {
+const generateCalculatorGame = () => {
   const randomFirstNum = generateRandomNum();
   const randomSecondNum = generateRandomNum();
   const operators = ['+', '-', '*'];
@@ -25,6 +25,6 @@ const calcGame = () => {
   return [result.toString(), question];
 };
 const brainCalc = () => {
-  base(calcGame, rule);
+  createDefaultOutput(generateCalculatorGame, rule);
 };
 export default brainCalc;

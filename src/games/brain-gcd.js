@@ -1,32 +1,33 @@
-import base from '../index.js';
+import createDefaultOutput from '../index.js';
 import generateRandomNum from '../utils.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-const gameGcd = () => {
+const euclideanAlgorithm = (num1, num2) => {
+  if (num1 === 0 || num2 === 0) {
+    return Math.abs(num1 || num2);
+  }
+  const a = Math.abs(num1);
+  const b = Math.abs(num2);
+  if (a === b) {
+    return a;
+  }
+  if (a > b) {
+    return euclideanAlgorithm(a - b, b);
+  }
+  if (a < b) {
+    return euclideanAlgorithm(a, b - a);
+  }
+  return null;
+};
+const generateGcdGame = () => {
   const randomFirstNum = generateRandomNum();
   const randomSecondNum = generateRandomNum();
-
-  let result = 0;
-  if (randomFirstNum > randomSecondNum) {
-    for (let j = randomFirstNum; j > 0; j -= 1) {
-      if (randomFirstNum % j === 0 && randomSecondNum % j === 0) {
-        result = j;
-        break;
-      }
-    }
-  } else {
-    for (let z = randomSecondNum; z > 0; z -= 1) {
-      if (randomFirstNum % z === 0 && randomSecondNum % z === 0) {
-        result = z;
-        break;
-      }
-    }
-  }
+  const correctAnswerToString = euclideanAlgorithm(randomFirstNum, randomSecondNum).toString();
   const question = `${randomFirstNum} ${randomSecondNum}`;
-  return [result.toString(), question];
+  return [correctAnswerToString, question];
 };
 const brainGcd = () => {
-  base(gameGcd, rule);
+  createDefaultOutput(generateGcdGame, rule);
 };
 export default brainGcd;
